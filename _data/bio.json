@@ -1,18 +1,15 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Shisen Yue",
     "label": "Student",
     "picture": "https://github.com/Shawn0918.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "email": "lyw520@sjtu.edu.cn",
+    "phone": "+86 18932729919",
+    "website": "https://Shawn0918.github.io",
+    "summary": "I am studying for a B.A. in Linguistics in the Department of Foreign Language at Shanghai Jiao Tong University. I expect to graduate in Spring, 2024.",
+    "location": { "address": "", "postalCode": "", "city": "Shanghai", "countryCode": "China", "region": "Shanghai" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "https://github.com/Shawn0918" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "mmaluhia", "url": "https://github.com/Shawn0918" }
     ]
   },
   "interests": [
