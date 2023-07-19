@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/modelblocks/Computational-linguistcs.jpg
 title: "Understanding Sentence Comprehension with Algorithmic-level Model"
 date: 2023
 published: false

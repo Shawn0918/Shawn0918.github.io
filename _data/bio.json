@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Shisen Yue",
-    "label": "Student",
+    "label": "Senior Student, <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a>",
     "picture": "https://github.com/Shawn0918.png",
     "email": "lyw520@sjtu.edu.cn",
     "phone": "+86 18932729919",
@@ -9,7 +9,15 @@
     "summary": "I am studying for a B.A. in Linguistics in the Department of Foreign Language at Shanghai Jiao Tong University. I expect to graduate in Spring, 2024.",
     "location": { "address": "", "postalCode": "", "city": "Shanghai", "countryCode": "China", "region": "Shanghai" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "https://github.com/Shawn0918" }
+      { "network": "github", "username": "Shawn0918", "url": "https://github.com/Shawn0918" },
+      { "network": "linkedin", "username": "Shisen_Yue", "url": "https://www.linkedin.com/in/%E5%A3%AB%E6%A3%AE-%E5%B2%B3-a6b678275/" }
+    ],
+    "interests": [
+      { "name": "🤖Artificial Intelligence: Natural Language Processing, Reinforcement Learning" },
+      { "name": "📖Linguistics: Computational Linguistics, Computational Modeling, Syntax, Semantics" },
+      { "name": "🎹Music: pop music, folk songs, piano" },
+      { "name": "🏊Sports: swimming, football, body building" },
+      { "name": "🎬Movies directors: David Fincher, Quentin Tarantino, Hayao Miyazaki" }
     ]
   },
   "interests": [
