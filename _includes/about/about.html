@@ -41,51 +41,167 @@
         .caption {
           margin-bottom: 20px;
         }
+        .text {
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          text-indent: 4ch;
+        }
         .interest-line {
           padding-left: 60px; /* Adjust this value to set the desired indentation */
           line-height: 1.2;
+          font-size: 18px;
+          font-weight: 400;
+          font-family: "Open Sans", sans-serif;
         }
-      </style>
-    </head>
-    <div class="row">
-      <hr class="my-4">
-      <h2 class="caption">About me</h2> <!-- Caption: "About me" -->
-      <p class="interest-line">{{ site.data.bio.basics.summary }}</p>
-    </div>
-    <div class="row">
-      <hr class="my-4">
-      <h2 class="caption">My Interests</h2>
-      {% for interest in site.data.bio.basics.interests %}
-            {% capture name %}{{ interest.name }}{% endcapture %}
-            <p class="interest-line">{{ name }}</p>
-      {% endfor %}  
-    <head>
-      <hr class="my-4">
-      <h2>Educational Background</h2>
-      <title>Education Background</title>
-      <style>
-        .education-section {
-          display: flex;
-          align-items: center;
-          margin-top: 10px;
-          margin-bottom: 20px;
-        }
-    
-        .school-symbol {
-          width: 200px; /* Adjust the width of the symbol as needed */
-          height: 200px; /* Adjust the height of the symbol as needed */
-          margin-right: 10px; /* Adjust the spacing between the symbol and the content as needed */
+        .indented-paragraph {
+          margin-left: 4ch; /* Adjust this value to set the desired indentation */
         }
       </style>
     </head>
     <body>
-      <div class="education-section">
+      <div class="row">
+        <hr class="my-4">
+        <h2 class="caption">About me</h2> <!--  Caption: "About me" -->
+        <p class="text">{{ site.data.bio.basics.summary }}</p>
+      </div>
+      <div class="row">
+        <hr class="my-4">
+        <h2 class="caption">My Interests</h2>
+        {% for interest in site.data.bio.basics.interests %}
+              {% capture name %}{{ interest.name }}{% endcapture %}
+              <p class="interest-line">{{ name }}</p>
+        {% endfor %}  
+      </div>
+    </body>
+    <hr class="my-4">
+    <h2>Educational Background</h2>
+      
+    <head>
+      <title>Educational Background</title>
+      <style>
+        .school-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+    
+        .school-symbol {
+          width: 200px; /* Adjust the width of the school symbol */
+          height: 200px; /* Adjust the height of the school symbol */
+          margin-right: 20px; /* Adjust the spacing between the symbol and the school name */
+        }
+    
+        .school-info {
+          font-family: "Open Sans", sans-serif; /* Use your desired font for school info */
+          font-size: 18px; /* Adjust the font size for school info */
+        }
+
+        .school-name {
+          font-family: "Open Sans", sans-serif; /* Replace "Your Desired Font" with the desired font for the school name */
+          font-size: 24px; /* Adjust the font size for the school name */
+          font-weight: 500;
+        }
+    
+        .expand-key {
+          /* color: blue;  Adjust the color of the interactive key */
+          cursor: pointer;
+          text-decoration: none; /* Remove underline from the clickable span */
+          display: inline-block; /* Ensure the span takes the space of its content only */
+        }
+
+        .expand-icon {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent; /* Adjust arrow size as needed */
+          border-right: 5px solid transparent; /* Adjust arrow size as needed */
+          border-top: 5px solid blue; /* Adjust arrow color and size as needed */
+          margin-right: 5px; /* Adjust spacing between arrow and word "Grades" */
+        }
+
+        .grades {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease; /* Add a CSS transition for smooth expansion */
+          display: flex; /* Use Flexbox layout */
+          flex-wrap: wrap; /* Allow grade containers to wrap to the next row */
+          justify-content: space-between; /* Spread the containers evenly across the available space */
+        }
+
+        .grade-container {
+          flex-basis: calc(40% - 20px); /* Each container will take 1/3 of the available space minus the gap */
+          margin-bottom: 20px; /* Add space between each grade container */
+        }
+
+        .grades.open {
+          max-height: 1000px; /* Adjust the max height to fit your content */
+        }
+        .grades p {
+          margin: 5px 0; /* Adjust the margin as needed */
+        }
+        .subsection-title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 40px; /* Add spacing above the subsection title */
+          margin-bottom: 5px; /* Adjust this margin to increase the distance */
+          color: #333; /* Customize the color of the subsection title */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="school-container">
         <img class="school-symbol" src="img/school/xiaohui.png" alt="School Symbol">
-        <div>
-          <h4>Shanghai Jiao Tong University</h4>
-          <p>Degree: Bachelor of Art in Linguistics</p>
-          <p>Year of Graduation: 2024</p>
+        <div class="school-info">
+          <p class="school-name">Shanghai Jiao Tong University</p>
+          <p>Major: Bachelor of Arts in Linguistics</p>
+          <p>Graduate Year: 2024</p>
+          <p>
+            <span class="expand-key" onclick="toggleGrades()">
+              &#x25B6; <!-- Unicode arrow character pointing right -->
+              Selected Grades <!-- Clickable word -->
+            </span>
+          </p>
+          <div class="grades" id="grades"> <!-- Use the 'grades' class for smooth animation -->
+            <!-- Place your grades here, use proper HTML structure as needed -->
+            <div class="grade-container">
+              <p class="subsection-title">Linguistics</p>
+              <p>Introduction to Syntax: 97/100</p>
+              <p>Phonetics and Phonology: 90/100</p>
+              <p>Introduction to Semantics: 91/100</p>
+              <p>Language and Cognition: 93/100</p>
+              <p>Language Data and Python Techniques: 92/100</p>
+              <p>Introduction to English Linguistics: 92/100</p>
+              <p>Research Methods in Linguistics: 90/100</p>
+              <p>Language Acquisition: A</p>
+            </div>
+            <div class="grade-container">
+              <p class="subsection-title">Computer Science</p>
+              <p>Design and Analysis of Algorithms: 97/100</p>
+              <p>Thinking and Approach of Programming: 92/100</p>
+              <p>Reinforcement Learning: 95/100</p>
+              <p>Data Structure: A</p>
+              <p>Machine Learning: A</p>
+              <p>C++ Programming (UCB Extension): A</p>
+              <p>Machine Learning (UCLA Extension): A+</p>
+            </div>
+            <div class="grade-container">
+              <p class="subsection-title">Mathematics</p>
+              <p>Probability and Statistics: 97/100</p>
+              <p>Introduction to Calculus: 96/100</p>
+            </div>  
+          </div>
         </div>
       </div>
+    
+      <!-- Add more educational background sections as needed -->
+    
+      <script>
+        function toggleGrades() {
+          var gradesDiv = document.getElementById('grades');
+          gradesDiv.classList.toggle('open'); // Add 'open' class to expand the grades
+        }
+      </script>
+    </body>
   </div>
 </div>

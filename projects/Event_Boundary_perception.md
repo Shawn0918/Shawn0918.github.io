@@ -8,5 +8,5 @@ published: true
 labels:
   - SPSS
 summary: "I designed experiments, shot videos and collected data to examine people's cognition of event boundaries."
-paperurl: /resources/The Perception of Event Boundaries Among Chinese Speaking Young Adults.pdf
+paperurl: /resources/EventBoundary.pdf
 ---

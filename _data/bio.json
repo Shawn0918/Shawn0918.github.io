@@ -6,18 +6,18 @@
     "email": "lyw520@sjtu.edu.cn",
     "phone": "+86 18932729919",
     "website": "https://Shawn0918.github.io",
-    "summary": "I am studying for a B.A. in Linguistics in the Department of Foreign Language at Shanghai Jiao Tong University. I expect to graduate in Spring, 2024.",
+    "summary": "I am studying for a B.A. in Linguistics in the Department of Foreign Language at <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a>. I expect to graduate in Spring, 2024. I'm interested in Computational Linguistics and Natural Language Processing. I'm honored to be supervised by Professor <a href=\"https://huhailinguist.github.io/\">Hai Hu</a> under the Department of Foreign Language in SJTU, and I'm working with Professor <a href=\"https://www.asc.ohio-state.edu/schuler.77/\">William Schuler</a> as an intern student in this summer on the topic of computational cognitive modeling.",
     "location": { "address": "", "postalCode": "", "city": "Shanghai", "countryCode": "China", "region": "Shanghai" },
     "profiles": [
       { "network": "github", "username": "Shawn0918", "url": "https://github.com/Shawn0918" },
       { "network": "linkedin", "username": "Shisen_Yue", "url": "https://www.linkedin.com/in/%E5%A3%AB%E6%A3%AE-%E5%B2%B3-a6b678275/" }
     ],
     "interests": [
-      { "name": "🤖Artificial Intelligence: Natural Language Processing, Reinforcement Learning" },
-      { "name": "📖Linguistics: Computational Linguistics, Computational Modeling, Syntax, Semantics" },
-      { "name": "🎹Music: pop music, folk songs, piano" },
-      { "name": "🏊Sports: swimming, football, body building" },
-      { "name": "🎬Movies directors: David Fincher, Quentin Tarantino, Hayao Miyazaki" }
+      { "name": "🤖 Artificial Intelligence: Natural Language Processing, Reinforcement Learning" },
+      { "name": "📖 Linguistics: Computational Linguistics, Computational Modeling, Syntax, Semantics" },
+      { "name": "🎹 Music: pop music, folk songs, piano" },
+      { "name": "🏊 Sports: swimming, football, body building" },
+      { "name": "🎬 Movies directors: David Fincher, Quentin Tarantino, Hayao Miyazaki" }
     ]
   },
   "interests": [
