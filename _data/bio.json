@@ -10,7 +10,8 @@
     "location": { "address": "", "postalCode": "", "city": "Shanghai", "countryCode": "China", "region": "Shanghai" },
     "profiles": [
       { "network": "github", "username": "Shawn0918", "url": "https://github.com/Shawn0918" },
-      { "network": "linkedin", "username": "Shisen_Yue", "url": "https://www.linkedin.com/in/%E5%A3%AB%E6%A3%AE-%E5%B2%B3-a6b678275/" }
+      { "network": "linkedin", "username": "Shisen_Yue", "url": "https://www.linkedin.com/in/%E5%A3%AB%E6%A3%AE-%E5%B2%B3-a6b678275/" },
+      { "network": "globe", "username": "Shisen_Yue", "url": "https://clustrmaps.com/site/1bvsa" }
     ],
     "interests": [
       { "name": "🤖 Artificial Intelligence: Natural Language Processing, Reinforcement Learning" },
