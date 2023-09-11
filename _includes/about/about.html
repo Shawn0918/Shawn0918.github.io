@@ -8,28 +8,28 @@
         <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
         <p class="lead text-center">{{ site.data.bio.basics.label }}</p>
         <hr class="my-4">
-        <div class="row">
+        <div class="icon-container">
           {% if site.data.bio.basics.website %}
             {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-            <div class="col text">
+            <div class="icon-item">
               {% include about/social.html url=url name='house' %}
             </div>
           {% endif %}
 
           {% if site.data.bio.basics.email %}
             {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-            <div class="col text">
+            <div class="icon-item">
               {% include about/social.html url=url name='envelope' %}
             </div>
           {% endif %}
           {% for profile in site.data.bio.basics.profiles %}
             {% capture url %}{{ profile.url }}{% endcapture %}
             {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-            <div class="col text">
+            <div class="icon-item">
               {% include about/social.html url=url name=name %}
             </div>
           {% endfor %}
-          <div div style="display:inline-block;height:50px;width:50px;margin-left:45px;margin-top: -3px">
+          <div div style="display:inline-block;height:25px;width:25px;margin-top: -3px" class="icon-item">
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=MsQy3kMq57Yr4hO-119bOTQKhn1ixm6c_hMyt0n6Fk0"></script>
           </div>
         </div>

@@ -49,3 +49,14 @@ a {
   border-style: solid;
   border-width: 1px;
 }
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Creates a dynamic grid with 50px columns */
+  grid-gap: 120px; /* Adjust the gap between icons as needed */
+  justify-items: center; /* Center icons horizontally within each grid cell */
+}
+
+.icon-item {
+  text-align: center; /* Center the content inside each grid cell */
+}
