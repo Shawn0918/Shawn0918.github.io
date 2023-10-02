@@ -46,7 +46,14 @@
           font-family: "Open Sans", sans-serif;
           font-size: 17px;
           font-weight: 400;
-          text-indent: 4ch;
+          margin-top: 0px;
+          margin-left: 2ch;
+        }
+        .underlined-text {
+          font-family: "Open Sans", sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+          margin-top: 0px;
         }
         .interest-line {
           padding-left: 60px; /* Adjust this value to set the desired indentation */
@@ -64,20 +71,13 @@
       <div class="row">
         <hr class="my-4">
         <h2 class="caption">About me</h2> <!--  Caption: "About me" -->
-        <p class="text">{{ site.data.bio.basics.summary }}</p>
-      </div>
-      <div class="row">
-        <hr class="my-4">
-        <h2 class="caption">Interests</h2>
-        {% for interest in site.data.bio.basics.interests %}
-              {% capture name %}{{ interest.name }}{% endcapture %}
-              <p class="interest-line">{{ name }}</p>
-        {% endfor %}  
+        <p class="text">{{ site.data.bio.basics.summary-para1 }}</p>
+        <p class="text">{{ site.data.bio.basics.summary-para2 }}</p>
+        <p class="text">{{ site.data.bio.basics.summary-para3 }}</p>
       </div>
     </body>
     <hr class="my-4">
-    <h2>Educational Background</h2>
-      
+    <h2>Education</h2>
     <head>
       <title>Educational Background</title>
       <style>
@@ -88,9 +88,20 @@
         }
     
         .school-symbol {
-          width: 200px; /* Adjust the width of the school symbol */
-          height: 200px; /* Adjust the height of the school symbol */
-          margin-right: 20px; /* Adjust the spacing between the symbol and the school name */
+          width: 150px; /* Adjust the width of the school symbol */
+          height: 150px; /* Adjust the height of the school symbol */
+          margin-right: 80px; /* Adjust the spacing between the symbol and the school name */
+          margin-left: 30px;
+          margin-top: 10px; /* Adjust the spacing between the symbol and the top of the container */
+        }
+
+        .osu-symbol {
+          width: 174px; /* Adjust the width of the school symbol */
+          height: 135px; /* Adjust the height of the school symbol */
+          margin-right: 65px; /* Adjust the spacing between the symbol and the school name */
+          margin-top: 50px; /* Adjust the spacing between the symbol and the top of the container */
+          margin-bottom: 20px;
+          margin-left: 20px;
         }
     
         .school-info {
@@ -100,8 +111,17 @@
 
         .school-name {
           font-family: "Open Sans", sans-serif; /* Replace "Your Desired Font" with the desired font for the school name */
-          font-size: 24px; /* Adjust the font size for the school name */
+          font-size: 20px; /* Adjust the font size for the school name */
+          font-weight: 700;
+          margin-top: 30px;
+          margin-bottom: 5px;
+        }
+
+        .experience-name {
+          font-family: "Noto Sans", sans-serif;
+          font-size: 20px;
           font-weight: 500;
+          margin-bottom: 0px;
         }
     
         .expand-key {
@@ -155,8 +175,8 @@
         <img class="school-symbol" src="img/school/xiaohui.png" alt="School Symbol">
         <div class="school-info">
           <p class="school-name">Shanghai Jiao Tong University</p>
-          <p>Major: Bachelor of Arts in Linguistics</p>
-          <p>Graduate Year: 2024</p>
+          <p>2020.09 - 2024.06 (expected)</p>
+          <p>B.A. in Linguistics (GPA: 88.5/100), with a concentration on computational linguistics. Apart from the compulsory courses of the linguistic department, I've also excelled in electives of the computer science department. See more details in the selected grades.</p>
           <p>
             <span class="expand-key" onclick="toggleGrades()">
               &#x25B6; <!-- Unicode arrow character pointing right -->
@@ -194,6 +214,17 @@
           </div>
         </div>
       </div>
+      <hr class="my-4">
+      <h2>Experience</h2>
+      <div class="school-container">
+        <img class="osu-symbol" src="img/school/osu.png" alt="School Symbol">
+        <div class="school-info">
+          <p class="experience-name">Ohio State University, Research Assistant</p>
+          <p>supervised by <a href="https://www.asc.ohio-state.edu/schuler.77/">Prof. William Schuler</a></p>
+          <p>I researched the extra processing costs when people read texts with complex grammar rules such as filler gap constructions with left-corner parser. I experimented with eye-tracking corpora <a href="https://link.springer.com/article/10.3758/s13428-016-0734-0">geco</a> and <a href="https://osf.io/sjefs/">provo</a> with the tool chains provided by <a href="https://github.com/modelblocks/modelblocks-release">modelblocks-release</a>.</p>
+        </div>
+      </div>
+      
     
       <!-- Add more educational background sections as needed -->
     

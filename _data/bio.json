@@ -1,12 +1,14 @@
 {
   "basics": {
     "name": "Shisen Yue",
-    "label": "Senior Student, <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a>",
+    "label": "Undergraduate Student, <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a>",
     "picture": "https://github.com/Shawn0918.png",
     "email": "lyw520@sjtu.edu.cn",
     "phone": "+86 18932729919",
     "website": "https://Shawn0918.github.io",
-    "summary": "I am studying for a B.A. in Linguistics in the Department of Foreign Language at <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a>. I expect to graduate in Spring, 2024. I'm interested in Computational Linguistics and Natural Language Processing. I'm honored to be supervised by Professor <a href=\"https://huhailinguist.github.io/\">Hai Hu</a> under the Department of Foreign Language in SJTU, and I'm working with Professor <a href=\"https://www.asc.ohio-state.edu/schuler.77/\">William Schuler</a> as an intern student in this summer on the topic of computational cognitive modeling. I'm a perspective student for 2024 Fall Ph.D. program in Computational Linguistics. You can find my CV <a href=\"https://shawn0918.github.io/resources/Shisen_Yue.pdf\">here</a> and my full research statement <a href=\"https://Shawn0918.github.io/about-me.html\">here</a>.",
+    "summary-para1": "Hi, I am Shisen Yue and I'm studying for a B.A. in Linguistics in the Department of Foreign Language at <a href=\"https://en.sjtu.edu.cn/\">Shanghai Jiao Tong University</a> on track to graduate in 2024. I'm interested in Computational Linguistics and Natural Language Processing. During my undergraduate study, I'm honored to be supervised by Professor <a href=\"https://huhailinguist.github.io/\">Hai Hu</a> under the Department of Foreign Language in SJTU on the research of large language models.",
+    "summary-para2": "Started from Spring 2023, I'm lucky to be a research assistant supervised by Professor <a href=\"https://www.asc.ohio-state.edu/schuler.77/\">William Schuler</a> at <a href=\"https://www.osu.edu/\">Ohio State University<a/>, working on computational models of human language processing. ",
+    "summary-para3": "I'm a prospective student for 2024 fall Linguistic Ph.D. program in Linguistics, Welcome to read my <a href=\"https://shawn0918.github.io/resources/Shisen_Yue.pdf\">CV</a> and my <a href=\"https://Shawn0918.github.io/about-me.html\">research statement</a> : )",
     "location": { "address": "", "postalCode": "", "city": "Shanghai", "countryCode": "China", "region": "Shanghai" },
     "profiles": [
       { "network": "github", "username": "Shawn0918", "url": "https://github.com/Shawn0918" },

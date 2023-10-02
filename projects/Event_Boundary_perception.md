@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/event_boundary/doorway.jpeg
+image: img/event_boundary/boundary.png
 title: "Examining Event Boundaries Perception in Young Chinese"
 date: 2023.2
 published: true

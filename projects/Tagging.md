@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/tagging/nf.jpeg
+image: img/tagging/tags.jpeg
 title: "Tagging movies on Netflix"
 # All dates must be YYYY-MM-DD format!
 date: 2022.8

@@ -1,0 +1,40 @@
+<head>
+    <title>Indented Line</title>
+    <style>
+      /* Add spacing between the caption and the content */
+      .caption {
+        margin-bottom: 20px;
+      }
+      .text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        text-indent: 4ch;
+      }
+      .interest-line {
+        padding-left: 60px; /* Adjust this value to set the desired indentation */
+        line-height: 1.2;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+      }
+      .indented-paragraph {
+        margin-left: 4ch; /* Adjust this value to set the desired indentation */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <hr class="my-4">
+      <h2 class="caption">About me</h2> <!--  Caption: "About me" -->
+      <p class="text">{{ site.data.bio.basics.summary }}</p>
+    </div>
+    <div class="row">
+      <hr class="my-4">
+      <h2 class="caption">Interests</h2>
+      {% for interest in site.data.bio.basics.interests %}
+            {% capture name %}{{ interest.name }}{% endcapture %}
+            <p class="interest-line">{{ name }}</p>
+      {% endfor %}  
+    </div>
+  </body>
