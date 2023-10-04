@@ -74,157 +74,155 @@
         <p class="text">{{ site.data.bio.basics.summary-para1 }}</p>
         <p class="text">{{ site.data.bio.basics.summary-para2 }}</p>
         <p class="text">{{ site.data.bio.basics.summary-para3 }}</p>
-      </div>
-    </body>
-    <hr class="my-4">
-    <h2>Education</h2>
-    <head>
-      <title>Educational Background</title>
-      <style>
-        .school-container {
-          display: flex;
-          align-items: center;
-          margin-bottom: 20px;
-        }
-    
-        .school-symbol {
-          width: 150px; /* Adjust the width of the school symbol */
-          height: 150px; /* Adjust the height of the school symbol */
-          margin-right: 80px; /* Adjust the spacing between the symbol and the school name */
-          margin-left: 20px;
-          margin-top: 10px; /* Adjust the spacing between the symbol and the top of the container */
-        }
+        <hr class="my-4">
+        <h2>Education</h2>
+        <head>
+          <title>Educational Background</title>
+          <style>
+            .school-container {
+              display: flex;
+              align-items: center;
+              margin-bottom: 20px;
+            }
+        
+            .school-symbol {
+              width: 150px; /* Adjust the width of the school symbol */
+              height: 150px; /* Adjust the height of the school symbol */
+              margin-right: 60px; /* Adjust the spacing between the symbol and the school name */
+              margin-left: 10px;
+              margin-top: 10px; /* Adjust the spacing between the symbol and the top of the container */
+            }
 
-        .osu-symbol {
-          width: 174px; /* Adjust the width of the school symbol */
-          height: 135px; /* Adjust the height of the school symbol */
-          margin-right: 65px; /* Adjust the spacing between the symbol and the school name */
-          margin-top: 50px; /* Adjust the spacing between the symbol and the top of the container */
-          margin-bottom: 20px;
-          margin-left: 10px;
-        }
-    
-        .school-info {
-          font-family: "Open Sans", sans-serif; /* Use your desired font for school info */
-          font-size: 17px; /* Adjust the font size for school info */
-        }
+            .osu-symbol {
+              width: 174px; /* Adjust the width of the school symbol */
+              height: 135px; /* Adjust the height of the school symbol */
+              margin-right: 45px; /* Adjust the spacing between the symbol and the school name */
+              margin-top: 50px; /* Adjust the spacing between the symbol and the top of the container */
+              margin-bottom: 20px;
+            }
+        
+            .school-info {
+              font-family: "Open Sans", sans-serif; /* Use your desired font for school info */
+              font-size: 17px; /* Adjust the font size for school info */
+            }
 
-        .school-name {
-          font-family: "Open Sans", sans-serif; /* Replace "Your Desired Font" with the desired font for the school name */
-          font-size: 20px; /* Adjust the font size for the school name */
-          font-weight: 700;
-          margin-top: 30px;
-          margin-bottom: 5px;
-        }
+            .school-name {
+              font-family: "Open Sans", sans-serif; /* Replace "Your Desired Font" with the desired font for the school name */
+              font-size: 20px; /* Adjust the font size for the school name */
+              font-weight: 700;
+              margin-top: 30px;
+              margin-bottom: 5px;
+            }
 
-        .experience-name {
-          font-family: "Noto Sans", sans-serif;
-          font-size: 20px;
-          font-weight: 500;
-          margin-bottom: 0px;
-        }
-    
-        .expand-key {
-          /* color: blue;  Adjust the color of the interactive key */
-          cursor: pointer;
-          text-decoration: none; /* Remove underline from the clickable span */
-          display: inline-block; /* Ensure the span takes the space of its content only */
-        }
+            .experience-name {
+              font-family: "Noto Sans", sans-serif;
+              font-size: 20px;
+              font-weight: 500;
+              margin-bottom: 0px;
+            }
+        
+            .expand-key {
+              /* color: blue;  Adjust the color of the interactive key */
+              cursor: pointer;
+              text-decoration: none; /* Remove underline from the clickable span */
+              display: inline-block; /* Ensure the span takes the space of its content only */
+            }
 
-        .expand-icon {
-          display: inline-block;
-          width: 0;
-          height: 0;
-          border-left: 5px solid transparent; /* Adjust arrow size as needed */
-          border-right: 5px solid transparent; /* Adjust arrow size as needed */
-          border-top: 5px solid blue; /* Adjust arrow color and size as needed */
-          margin-right: 5px; /* Adjust spacing between arrow and word "Grades" */
-        }
+            .expand-icon {
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent; /* Adjust arrow size as needed */
+              border-right: 5px solid transparent; /* Adjust arrow size as needed */
+              border-top: 5px solid blue; /* Adjust arrow color and size as needed */
+              margin-right: 5px; /* Adjust spacing between arrow and word "Grades" */
+            }
 
-        .grades {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.3s ease; /* Add a CSS transition for smooth expansion */
-          display: flex; /* Use Flexbox layout */
-          flex-wrap: wrap; /* Allow grade containers to wrap to the next row */
-          justify-content: space-between; /* Spread the containers evenly across the available space */
-        }
+            .grades {
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease; /* Add a CSS transition for smooth expansion */
+              display: flex; /* Use Flexbox layout */
+              flex-wrap: wrap; /* Allow grade containers to wrap to the next row */
+              justify-content: space-between; /* Spread the containers evenly across the available space */
+            }
 
-        .grade-container {
-          flex-basis: calc(40% - 20px); /* Each container will take 1/3 of the available space minus the gap */
-          margin-bottom: 20px; /* Add space between each grade container */
-        }
+            .grade-container {
+              flex-basis: calc(40% - 20px); /* Each container will take 1/3 of the available space minus the gap */
+              margin-bottom: 20px; /* Add space between each grade container */
+            }
 
-        .grades.open {
-          max-height: 1000px; /* Adjust the max height to fit your content */
-        }
-        .grades p {
-          margin: 5px 0; /* Adjust the margin as needed */
-        }
-        .subsection-title {
-          font-size: 18px;
-          font-weight: bold;
-          margin-top: 40px; /* Add spacing above the subsection title */
-          margin-bottom: 5px; /* Adjust this margin to increase the distance */
-          color: #333; /* Customize the color of the subsection title */
-        }
-      </style>
-    </head>
-    <body>
-      <div class="school-container">
-        <img class="school-symbol" src="img/school/xiaohui.png" alt="School Symbol">
-        <div class="school-info">
-          <p class="school-name">Shanghai Jiao Tong University</p>
-          <p>2020.09 - 2024.06 (expected)</p>
-          <p>B.A. in Linguistics (GPA: 88.5/100), with a concentration on computational linguistics. Apart from the compulsory courses of the linguistic department, I've also excelled in electives of the computer science department. See more details in the selected grades.</p>
-          <p>
-            <span class="expand-key" onclick="toggleGrades()">
-              &#x25B6; <!-- Unicode arrow character pointing right -->
-              Selected Grades <!-- Clickable word -->
-            </span>
-          </p>
-          <div class="grades" id="grades"> <!-- Use the 'grades' class for smooth animation -->
-            <!-- Place your grades here, use proper HTML structure as needed -->
-            <div class="grade-container">
-              <p class="subsection-title">Linguistics</p>
-              <p>Introduction to Syntax: 97/100</p>
-              <p>Phonetics and Phonology: 90/100</p>
-              <p>Introduction to Semantics: 91/100</p>
-              <p>Language and Cognition: 93/100</p>
-              <p>Language Data and Python Techniques: 92/100</p>
-              <p>Introduction to English Linguistics: 92/100</p>
-              <p>Research Methods in Linguistics: 90/100</p>
-              <p>Language Acquisition: A</p>
+            .grades.open {
+              max-height: 1000px; /* Adjust the max height to fit your content */
+            }
+            .grades p {
+              margin: 5px 0; /* Adjust the margin as needed */
+            }
+            .subsection-title {
+              font-size: 18px;
+              font-weight: bold;
+              margin-top: 40px; /* Add spacing above the subsection title */
+              margin-bottom: 5px; /* Adjust this margin to increase the distance */
+              color: #333; /* Customize the color of the subsection title */
+            }
+          </style>
+        </head>
+        <body>
+          <div class="school-container">
+            <img class="school-symbol" src="img/school/xiaohui.png" alt="School Symbol">
+            <div class="school-info">
+              <p class="school-name">Shanghai Jiao Tong University</p>
+              <p>2020.09 - 2024.06 (expected)</p>
+              <p>B.A. in Linguistics (GPA: 88.5/100), with a concentration on computational linguistics. Apart from the compulsory courses of the linguistic department, I've also excelled in electives of the computer science department. See more details in the selected grades.</p>
+              <p>
+                <span class="expand-key" onclick="toggleGrades()">
+                  &#x25B6; <!-- Unicode arrow character pointing right -->
+                  Selected Grades <!-- Clickable word -->
+                </span>
+              </p>
+              <div class="grades" id="grades"> <!-- Use the 'grades' class for smooth animation -->
+                <!-- Place your grades here, use proper HTML structure as needed -->
+                <div class="grade-container">
+                  <p class="subsection-title">Linguistics</p>
+                  <p>Introduction to Syntax: 97/100</p>
+                  <p>Phonetics and Phonology: 90/100</p>
+                  <p>Introduction to Semantics: 91/100</p>
+                  <p>Language and Cognition: 93/100</p>
+                  <p>Language Data and Python Techniques: 92/100</p>
+                  <p>Introduction to English Linguistics: 92/100</p>
+                  <p>Research Methods in Linguistics: 90/100</p>
+                  <p>Language Acquisition: A</p>
+                </div>
+                <div class="grade-container">
+                  <p class="subsection-title">Computer Science</p>
+                  <p>Design and Analysis of Algorithms: 97/100</p>
+                  <p>Thinking and Approach of Programming: 92/100</p>
+                  <p>Reinforcement Learning: 95/100</p>
+                  <p>Data Structure: A</p>
+                  <p>Machine Learning: A</p>
+                  <p>C++ Programming (UCB Extension): A</p>
+                  <p>Machine Learning (UCLA Extension): A+</p>
+                </div>
+                <div class="grade-container">
+                  <p class="subsection-title">Mathematics</p>
+                  <p>Probability and Statistics: 97/100</p>
+                  <p>Introduction to Calculus: 96/100</p>
+                </div>  
+              </div>
             </div>
-            <div class="grade-container">
-              <p class="subsection-title">Computer Science</p>
-              <p>Design and Analysis of Algorithms: 97/100</p>
-              <p>Thinking and Approach of Programming: 92/100</p>
-              <p>Reinforcement Learning: 95/100</p>
-              <p>Data Structure: A</p>
-              <p>Machine Learning: A</p>
-              <p>C++ Programming (UCB Extension): A</p>
-              <p>Machine Learning (UCLA Extension): A+</p>
+          </div>
+          <hr class="my-4">
+          <h2>Experience</h2>
+          <div class="school-container">
+            <img class="osu-symbol" src="img/school/osu.png" alt="School Symbol">
+            <div class="school-info">
+              <p class="experience-name">Ohio State University, Research Assistant</p>
+              <p>supervised by <a href="https://www.asc.ohio-state.edu/schuler.77/">Prof. William Schuler</a></p>
+              <p>I researched the extra processing costs when people read texts with complex grammar rules such as filler gap constructions with left-corner parser. I experimented with eye-tracking corpora <a href="https://link.springer.com/article/10.3758/s13428-016-0734-0">geco</a> and <a href="https://osf.io/sjefs/">provo</a> with the tool chains provided by <a href="https://github.com/modelblocks/modelblocks-release">modelblocks-release</a>.</p>
             </div>
-            <div class="grade-container">
-              <p class="subsection-title">Mathematics</p>
-              <p>Probability and Statistics: 97/100</p>
-              <p>Introduction to Calculus: 96/100</p>
-            </div>  
           </div>
         </div>
-      </div>
-      <hr class="my-4">
-      <h2>Experience</h2>
-      <div class="school-container">
-        <img class="osu-symbol" src="img/school/osu.png" alt="School Symbol">
-        <div class="school-info">
-          <p class="experience-name">Ohio State University, Research Assistant</p>
-          <p>supervised by <a href="https://www.asc.ohio-state.edu/schuler.77/">Prof. William Schuler</a></p>
-          <p>I researched the extra processing costs when people read texts with complex grammar rules such as filler gap constructions with left-corner parser. I experimented with eye-tracking corpora <a href="https://link.springer.com/article/10.3758/s13428-016-0734-0">geco</a> and <a href="https://osf.io/sjefs/">provo</a> with the tool chains provided by <a href="https://github.com/modelblocks/modelblocks-release">modelblocks-release</a>.</p>
-        </div>
-      </div>
-      
+      </body>
     
       <!-- Add more educational background sections as needed -->
     
