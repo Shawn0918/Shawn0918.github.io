@@ -10,7 +10,7 @@ labels:
   - Python
   - Keyword extraction
   - LDA model
-summary: "I used the LDA model to generate movie tags from their descriptions on Netflix."
+summary: "I used the Latent Dirichlet allocation (LDA) model to generate movie tags from their descriptions on Netflix."
 paperurl: https://shawn0918.quarto.pub/movie-tags-extraction-blog/posts/2022-08-31-final_project.html
 codeurl: https://github.com/Shawn0918/Movie_tags_extraction 
 ---
