@@ -130,7 +130,15 @@
               margin-top: 30px;
               margin-bottom: 5px;
             }
-        
+
+            .experience {
+              display: none; /* Initially hide the content */
+            }
+
+            .experience.open {
+              display: block; /* Show the content when 'open' class is applied */
+            }
+            
             .expand-key {
               /* color: blue;  Adjust the color of the interactive key */
               cursor: pointer;
@@ -227,8 +235,29 @@
             <img class="osu-symbol" src="img/school/osu.png" alt="School Symbol">
             <div class="school-info">
               <p class="experience-name">Research Assistant, Ohio State University</p>
-              <p>2023.09 - Present</p>
-              <p>Supervised by <a href="https://www.asc.ohio-state.edu/schuler.77/">Prof. William Schuler</a>, I investigated the parsing of sentences that contain local ambiguity with a left corner parsing modeled on an linear algebraic implementation of distributed associative memory. By manipulating grammar rules, I simulated the production of local ambiguity and demonstrated it as the result of the parallel analysis of possible parses represented by superposed brain states. We are preparing the research results for a paper aimed at <em>Cognitive Science</em> now.</p>
+              <p>2023.04 - Present</p>
+              <p>Supervised by Professor <a href="https://www.asc.ohio-state.edu/schuler.77/">William Schuler</a>, I participated in two research projects about surprisal, one with data from eye-tracking and self-paced reading corpora and another with a computational cognitive model and hand-crafted sentences and grammar. Click on the following buttons to know more about these projects!</p>
+              <p>
+                <span class="expand-key" onclick="toggleExperience1()">
+                  &#x25B6; <!-- Unicode arrow character pointing right -->
+                  Project #1<!-- Clickable word -->
+                </span>
+              </p>
+              <div class="experience" id="experience1"> 
+                <p>
+                  I used and modified the code from the psycholinguistic toolkit <a href="https://github.com/modelblocks/modelblocks-release">modelblocks</a> to process and conduct statistical analysis on the data from <a href="https://osf.io/sjefs/">PROVO</a> and <a href="https://expsy.ugent.be/downloads/geco/">GECO</a>, two eye-tracking corpora. The analysis was then used to prove that as language models increase in size and the amount of training data, they perform worse in predicting surprisal as their superhuman accuracy prediction of rare words. The work is under review at <em>European Chapter of the Association for Computational Linguistics (EACL)</em>.</p>
+              </div>
+              <p>
+                <span class="expand-key" onclick="toggleExperience2()">
+                  &#x25B6; <!-- Unicode arrow character pointing right -->
+                  Project #2<!-- Clickable word -->
+                </span>
+              </p>
+              <div class="experience" id="experience2"> 
+                <p>
+                  I employed and refactored a left corner parser built on distributed associative memory, a model first used in <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.12511">Rasmussen and Schuler (2018)</a>. The memory and cues are stored in vectors and the associations between them are represented as matrices. The model demonstrates the parallel propagation of different analyses and the correlation between predictability and surprisal, which are proved with a set of hand-crafted sentences and grammar. We are now compiling the results for a paper aimed at <em>Cognitive Science</em>.</p>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -239,6 +268,18 @@
       <script>
         function toggleGrades() {
           var gradesDiv = document.getElementById('grades');
+          gradesDiv.classList.toggle('open'); // Add 'open' class to expand the grades
+        }
+      </script>
+      <script>
+        function toggleExperience1() {
+          var gradesDiv = document.getElementById('experience1');
+          gradesDiv.classList.toggle('open'); // Add 'open' class to expand the grades
+        }
+      </script>
+      <script>
+        function toggleExperience2() {
+          var gradesDiv = document.getElementById('experience2');
           gradesDiv.classList.toggle('open'); // Add 'open' class to expand the grades
         }
       </script>

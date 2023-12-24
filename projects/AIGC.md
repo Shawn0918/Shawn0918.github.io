@@ -8,6 +8,6 @@ published: true
 labels:
   - Python
   - Linux Shell
-summary: "I trained SVM classifiers with hand-crafted linguistic features from AIGC and human-written essays."
+summary: "I trained SVM classifiers with a series of linguistic features extracted from text to identify exam essays genereated by LLMs."
 paperurl: https://arxiv.org/pdf/2304.07666.pdf
 ---
